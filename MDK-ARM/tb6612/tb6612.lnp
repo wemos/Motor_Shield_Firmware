@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"tb6612\startup_stm32f030x6.o"
+"tb6612\main.o"
+"tb6612\stm32f0xx_it.o"
+"tb6612\stm32f0xx_hal_msp.o"
+"tb6612\tb6612.o"
+"tb6612\user_i2c.o"
+"tb6612\system_stm32f0xx.o"
+"tb6612\stm32f0xx_hal_i2c.o"
+"tb6612\stm32f0xx_hal_tim.o"
+"tb6612\stm32f0xx_hal.o"
+"tb6612\stm32f0xx_hal_tim_ex.o"
+"tb6612\stm32f0xx_hal_flash.o"
+"tb6612\stm32f0xx_hal_pwr.o"
+"tb6612\stm32f0xx_hal_cortex.o"
+"tb6612\stm32f0xx_hal_flash_ex.o"
+"tb6612\stm32f0xx_hal_gpio.o"
+"tb6612\stm32f0xx_hal_pwr_ex.o"
+"tb6612\stm32f0xx_hal_i2c_ex.o"
+"tb6612\stm32f0xx_hal_rcc.o"
+"tb6612\stm32f0xx_hal_rcc_ex.o"
+"tb6612\stm32f0xx_hal_dma.o"
+--library_type=microlib --strict --scatter "tb6612\tb6612.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tb6612.map" -o tb6612\tb6612.axf
